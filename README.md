@@ -52,7 +52,6 @@ This repository contains supplementary data for the manuscript:
 
 ## 🧪 Methodology
 Baseflow estimation follows Xie et al. (2022) using LSTM-based modeling.  
-**Reference**:  
 Xie, J. et al. (2022). *Water Resources Research* 58(8). https://doi.org/10.1029/2022WR032833
 
 ## ⚖️ License
