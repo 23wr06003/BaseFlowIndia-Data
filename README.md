@@ -20,35 +20,32 @@ submitted to the *Journal of Hydrology*. It includes:
 | `data_sources/`           | Directory containing metadata for all input datasets                        |
 | `LICENSE`                 | Usage terms (CC BY 4.0)                                                   |
 
+         |                                                   |            |             |
 ## 🌐 Data Sources
-| Dataset                  | Source                                             | Resolution | Period      |
-|--------------------------|---------------------------------------------------|------------|-------------|
-| Precipitation            | IMD Gridded Rainfall Data                         | 0.25°      | 1979-2020   |
-| Temperature              | IMD Gridded Temperature Data                      | 1.0°       | 1979-2020   |
-| GRACE Terrestrial Water | NASA JPL Mascons                                  | 0.5°       | 2002-2020   |
-| Soil Moisture            | GLDAS NOAH Model                                  | 0.25°      | 1979-2020   |
-| *[Add others]*           |                                                   |            |             |
+### Input Datasets Used for Simulation
 
-## 🧪 Methodology
-### Baseflow Estimation Workflow
-1. **Hydrological Modeling**:  
-   LSTM-based architecture adapted from Xie et al. (2022)
-2. **Parameterization**:  
-   Region-specific calibration using observed streamflow data
-3. **Baseflow Separation**:  
-   Digital filter applied to total runoff simulations
-4. **Validation**:  
-   Comparison against ground-truth baseflow estimates
+| Variable Type         | Description                          | Units       | Source               | Resolution              |
+|-----------------------|--------------------------------------|-------------|----------------------|-------------------------|
+| **Dynamic Variables** |                                      |             |                      |                         |
+| Total Precipitation   | Monthly accumulated rainfall         | mm/day      | ERA5                 | 0.25°, Monthly          |
+| 2m Temperature        | Air temperature at 2 meters          | °C          | ERA5                 | 0.25°, Monthly          |
+| 2m Dewpoint Temp      | Dewpoint temperature at 2 meters     | °C          | ERA5                 | 0.25°, Monthly          |
+| 10m Wind Speed        | Wind speed at 10 meters              | m/s         | ERA5                 | 0.25°, Monthly          |
+| Surface Net Radiation | Net radiation at surface             | W/m²        | ERA5                 | 0.25°, Monthly          |
+| Potential Evapotranspiration | Penman-Monteith PET           | mm/day      | Calculated from ERA5 | 0.25°, Monthly          |
+| Leaf Area Index       | Vegetation leaf area index           | unitless    | ERA5                 | 0.25°, Monthly          |
+| **Static Variables**  |                                      |             |                      |                         |
+| Mean Elevation        | Basin average elevation              | m           | MERIT DEM            | 90m                     |
+| Mean Slope            | Basin average slope                  | degrees     | MERIT DEM            | 90m                     |
+| Forest Fraction       | Forested area percentage            | %           | MODIS                | 500m                    |
+| NDVI                  | Normalised difference vegetation index | unitless  | Landsat              | 30m                     |
+| Clay Fraction         | Soil clay content                    | %           | SoilGrids            | 250m                    |
+| Sand Fraction         | Soil sand content                    | %           | SoilGrids            | 250m                    |
+| Bulk Density          | Soil bulk density                    | kg/m³       | SoilGrids            | 250m                    |
+| Permeability          | Rock hydraulic permeability          | log(m²)     | GLHYMPS              | 1km                     |
+| Aridity Index         | Long-term aridity measure            | unitless    | Calculated           | 0.25°                   |
 
-**Reference**:  
-Xie, J., Liu, X., Bai, P., & Liu, C. (2022). Estimating Gridded Monthly Baseflow Using GRACE/GRACE-FO and Machine Learning. *Water Resources Research*, 58(8). https://doi.org/10.1029/2022WR032833
 
-## ⚖️ License
-This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
-When using this data, please cite:  
-*[Your Full Paper Title]. Journal of Hydrology (Under Review).*
-
----
 
 ### 🔍 Data Access Instructions for Reviewers
 1. Download `baseflow_1979-2020.tiff` for spatial analysis
