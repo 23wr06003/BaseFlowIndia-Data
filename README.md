@@ -1,13 +1,12 @@
 # BaseFlowIndia-Data: Supplementary Data for Baseflow Simulation in Central and South India (1979-2020)
 
-## 🎥 Baseflow Animation (1979-2020)
+## Baseflow Animation (1979-2020)
 ![Monthly Baseflow Simulation](https://raw.githubusercontent.com/23wr06003/BaseFlowIndia-Data/main/BaseflowIndia.gif)  
 *Visualization of monthly baseflow patterns across Central and South India*
 
 ## 📄 Purpose
 This repository contains supplementary data for the manuscript:
-**"Estimating Gridded Monthly Baseflow across Central and Southern India"**  
-submitted to the *Journal of Hydrology*. It includes:
+**"Estimating Gridded Monthly Baseflow across Central and Southern India"** submitted to the *Journal of Hydrology*. It includes:
 - Final baseflow simulation outputs
 - Source data references
 - Methodology documentation
@@ -20,7 +19,6 @@ submitted to the *Journal of Hydrology*. It includes:
 | `data_sources/`           | Directory containing metadata for all input datasets                        |
 | `LICENSE`                 | Usage terms (CC BY 4.0)                                                   |
 
-         |                                                   |            |             |
 ## 🌐 Data Sources
 ### Input Datasets Used for Simulation
 
