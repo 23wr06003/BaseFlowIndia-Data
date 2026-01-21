@@ -16,6 +16,7 @@ This repository contains supplementary data for the manuscript:
 |--------------------------|-----------------------------------------------------------------------------|
 | `baseflowIndia.tiff` | **Primary output**: Monthly baseflow (mm/month) at 0.25° resolution        |
 | `BaseflowIndia.gif`       | Animated visualization of spatiotemporal patterns (1979-2020)               |
+| BaseflowIndia.nc | NetCdf file of Monthly baseflow (mm/month) at 0.25° resolution
 | `supplementary_materials`           | Directory containing the Streamflow Missing data heat maps and Annual statistics plots                        |
 | `LICENSE`                 | Usage terms (CC BY 4.0)                                                   |
 
