@@ -1,12 +1,12 @@
 # BaseFlowIndia-Data: Supplementary Data for Baseflow Simulation in Central and South India (1979-2020)
 
-## Baseflow Animation (1979-2020)
+## Baseflow Animation (1981-2020)
 ![Monthly Baseflow Simulation](https://raw.githubusercontent.com/23wr06003/BaseFlowIndia-Data/main/BaseflowIndia.gif)  
 *Visualization of monthly baseflow patterns across Central and South India*
 
 ## 📄 Purpose
 This repository contains supplementary data for the manuscript:
-**"Estimating Gridded Monthly Baseflow across Central and Southern India"** submitted to the *Journal of Hydrology*. It includes:
+**"Estimating Gridded Monthly Baseflow across Central and Southern India"** submitted to the *Physics and Chemistry of the Earth Journal*. It includes:
 - Final baseflow simulation outputs
 - Source data references
 - Methodology documentation
@@ -15,7 +15,7 @@ This repository contains supplementary data for the manuscript:
 | File/Directory          | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
 | `baseflowIndia.tiff` | **Primary output**: Monthly baseflow (mm/month) at 0.25° resolution        |
-| `BaseflowIndia.gif`       | Animated visualization of spatiotemporal patterns (1979-2020)               |
+| `BaseflowIndia.gif`       | Animated visualization of spatiotemporal patterns (1981-2020)               |
 | `Baseflow_India.nc` | NetCdf file of Monthly baseflow (mm/month) at 0.25° resolution
 | `supplementary_materials`           | Directory containing the Streamflow Missing data heat maps and Annual statistics plots                        |
 | `LICENSE`                 | Usage terms (CC BY 4.0)                                                   |
@@ -47,7 +47,7 @@ This repository contains supplementary data for the manuscript:
 
 
 ### 🔍 Data Access Instructions for Reviewers
-1. Download `baseflow_1979-2020.tiff` for spatial analysis
+1. Download `baseflow_1981-2020.tiff` for spatial analysis
 2. View `BaseflowIndia.gif` for temporal patterns
 3. Consult `data_sources/` metadata for input references
 
