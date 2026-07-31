@@ -52,8 +52,8 @@ This repository contains supplementary data for the manuscript:
 3. Consult `data_sources/` metadata for input references
 
 ## 🧪 Methodology
-Baseflow estimation follows Xie et al. (2022) using LSTM-based modeling.  
-Xie, J. et al. (2022). *Water Resources Research* 58(8). https://doi.org/10.1029/2022WR032833
+Estimation of Gridded Monthly Baseflow across Peninsular India: First Revision Submitted: Manuscript Number: JPCE-D-26-01048
+
 
 ## ⚖️ License
 CC BY 4.0
